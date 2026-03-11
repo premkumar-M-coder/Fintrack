@@ -1,0 +1,15 @@
+/* src/pages/Transactions/Transactions.css */
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #0b84ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 2px solid #e2e8f0;
+    color: #111;
+}

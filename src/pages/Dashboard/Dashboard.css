@@ -1,0 +1,140 @@
+/* =========================================================
+   PAGE WRAPPER
+========================================================= */
+.page-dashboard {
+    padding: 16px;
+    background: #f5f7fa;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.page-dashboard h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.muted {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* =========================================================
+   OUTSTANDING CARDS (LENT / BORROWED)
+========================================================= */
+.stat-row {
+    display: flex;
+    gap: 12px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px 16px;
+    min-width: 180px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(16,24,40,0.04);
+    box-sizing: border-box;
+}
+
+    .stat-card .label {
+        font-size: 13px;
+        color: #6b7280;
+        margin-bottom: 6px;
+    }
+
+    .stat-card strong {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+/* =========================================================
+   TWO COLUMN SECTION (BUDGET + PIE)
+========================================================= */
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+/* =========================================================
+   MAIN DASHBOARD LAYOUT
+========================================================= */
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+/* =========================================================
+   GENERIC CARD
+========================================================= */
+.card {
+    background: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+/* =========================================================
+   TRANSACTIONS
+========================================================= */
+.txn-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    background: #fff;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+    .txn-row strong {
+        font-size: 14px;
+    }
+
+/* =========================================================
+   ACCOUNTS
+========================================================= */
+.account-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    padding: 6px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+    .account-row:last-child {
+        border-bottom: none;
+    }
+
+/* =========================================================
+   RESPONSIVE FIX
+========================================================= */
+@media (max-width: 1100px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-row {
+        flex-wrap: wrap;
+    }
+}
